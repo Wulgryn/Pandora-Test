@@ -2,12 +2,13 @@
 #include <Windows.h>
 #include <thread>
 #include <string>
+#include <iostream>
 using namespace std;
 namespace Window
 {
-    jthread thread;
+    void InitMainThreadWindow();
 
-    void InitWindow();
+    int InitWindow();
 
     void WaitForExit();
 }
